@@ -1,0 +1,39 @@
+@import '../../App.scss';
+
+.slider{
+    .slider{
+    &__bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .3;
+    overflow: hidden;
+    background-image: radial-gradient($color-blue-light, $color-blue-dark);
+    }
+    &__bg-video-content {
+        height: 100% !important;
+        width: 100% !important;
+        object-fit: cover;
+    }
+    &__heading{
+        color: $color-blue-dark;
+        font-family: "Lato";
+    }
+    &__heading-main{
+        font-size: 3rem;
+        line-height: 3rem;
+        transition: opacity .135s ease-out,transform .135s cubic-bezier(.79,0,.71,1);
+        transition-delay: 0s, 0s;
+
+    }   
+    &__heading-sub-main{
+       // font-size: 2rem;
+        transition: opacity .135s ease-out,transform .135s cubic-bezier(.79,0,.71,1);
+        transition-delay: 0s, 0s;
+       
+    }
+}
+}

@@ -1,0 +1,44 @@
+$color-blue-dark: #153858;
+$color-blue-light: #1687ED;
+
+$color-white: #fff;
+$color-black: black;
+
+$color-grey: grey;
+
+
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+
+
+
+    .u-center-text{
+    display: grid;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    }
+    
+    
+    .u-margin-bottom-big{
+    margin-bottom: 10px;
+    }
+
+    .u-margin-bottom-small{
+        margin-bottom: 3px;
+        }
+    
+    .u-margin-zero{
+    margin-top: 0px;
+    }
+
+.container-portfolio{
+    background-color: $color-blue-light;
+    display: grid;
+    grid-template-rows: 0vh 88vh min-content;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+    margin: 0;
+}

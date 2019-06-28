@@ -1,0 +1,126 @@
+@import '../../App.scss';
+
+
+.projects .projects__card .projects__card-item .projects__card-item-inside a img{
+    height: 20rem;
+    border: 3px solid black;
+}
+
+.portfolio__header{
+    background-image: url(../../img/unsplash-1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    display: grid;
+    grid-column: full-start / full-end;
+  //  position: relative;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+   // height: 80vh;
+  //  width: 100%;
+    z-index: 333;
+    }
+    
+    
+    .portfolio__heading-3{
+        font-size: 3rem;
+        color: white;
+        text-transform: uppercase;
+        justify-self: center;
+        display: block;
+        align-self: center;
+        margin-bottom: 1rem;
+      }
+
+       .header__btn{
+        justify-self: center;
+        align-self: center;
+        position: absolute;
+        transform: translateY(200%);
+       }
+        .header__btn, .header__btn:link, .header__btn:visited {
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            display: inline-block;
+            border-radius: 10rem;
+            transition: all .2s;
+            font-size: 1.6rem;
+            border: none;
+            cursor: pointer;
+            color: $color-white;
+            background-color: $color-blue-dark;
+        }
+
+        .projects{
+          margin: 0 0;
+          display: grid;
+          grid-column: center-start / center-end;
+          grid-gap: 2rem;
+      }
+      @media (min-width: 1201px){
+        .projects{
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media (max-width: 1200px){
+        .projects{
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 900px){
+        .projects{
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+      
+      .project{
+          height: 20rem;
+          overflow: hidden;
+          border: 3px solid $color-blue-dark;
+          position: relative;
+      }
+      .project img{
+      width: 100%;
+      height: 100%;
+      transition-duration: 2s;
+      margin: 0 auto;
+      display: block;
+      }
+      
+      .project img:hover {
+          transform: scale(1.2);
+          -webkit-transform: scale(1.2);
+          -moz-transform: scale(1.2);
+          z-index: 0;
+          opacity : 0.2;
+          background-color: $color-blue-dark;
+      }
+      
+      .btn--white{
+          display: none;
+      }
+      .btn--white{
+      display: block;
+      height: 100%;
+      width: 100%;
+      border-radius: 10rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all .4s;
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      }
+
+      .text{
+        display: grid;
+        grid-column: center-start / center-end;       
+        text-align: center;
+        font-size: 30px; 
+        color: white;
+        margin: 10vh 0;
+      }
+    
+      
